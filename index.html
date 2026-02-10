@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince Ruganji | AI, ML & Mechanical Engineer</title>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Prince Ruganji</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="assets/profile.jpg" alt="Prince Ruganji" class="profile-img">
+
+    <h2>
+      <i class="fa-solid fa-robot"></i>
+      Mechanical, AI & Machine Learning Engineer
+    </h2>
+
+    <p>
+      Applied AI & ML graduate student with strong experience in machine learning pipelines,
+      embedded systems, prosthetics, and human-centered engineering solutions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2><i class="fa-solid fa-user"></i> About Me</h2>
+    <p>
+      I am an Applied Artificial Intelligence and Machine Learning Engineering graduate student
+      with a strong foundation in mechanical engineering, embedded systems, and data-driven
+      problem solving. I specialize in designing, training, and evaluating machine learning models
+      using real-world data while integrating sensors, IoT, and mechanical systems to build
+      impactful, human-centered solutions.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2><i class="fa-solid fa-brain"></i> Core Skills</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-chart-line"></i> Machine Learning & Data</h3>
+        <ul>
+          <li>Supervised & Unsupervised Learning</li>
+          <li>Feature Engineering</li>
+          <li>Time-Series Analysis</li>
+          <li>Explainable AI (SHAP)</li>
+          <li>Statistical Inference</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-code"></i> Programming & Tools</h3>
+        <ul>
+          <li>Python, PyTorch, scikit-learn</li>
+          <li>Pandas, NumPy</li>
+          <li>SQL, Git</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-microchip"></i> Embedded Systems & IoT</h3>
+        <ul>
+          <li>Arduino & Microcontrollers</li>
+          <li>Sensor Integration</li>
+          <li>IoT System Design</li>
+          <li>Real-Time Systems</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><i class="fa-solid fa-gear"></i> Engineering & Design</h3>
+        <ul>
+          <li>Mechanical Design</li>
+          <li>SolidWorks (CAD)</li>
+          <li>Electronics Integration</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
+
+    <div class="grid">
+
+      <div class="card project-card" data-project="loan-ai">
+        <h3>Fair & Explainable AI for Loan Approval</h3>
+        <p>
+          Transparent and bias-aware machine learning system for financial decision-making.
+        </p>
+        <span class="project-link">Click to view details →</span>
+      </div>
+
+      <div class="card project-card" data-project="energy">
+        <h3>Renewable Energy Grid Demand Analytics</h3>
+        <p>
+          Time-series modeling and forecasting of electricity demand and renewable generation.
+        </p>
+        <span class="project-link">Click to view details →</span>
+      </div>
+
+      <div class="card project-card" data-project="health">
+        <h3>Global Health & Life Expectancy Prediction</h3>
+        <p>
+          Predictive modeling of life expectancy using demographic and health indicators.
+        </p>
+        <span class="project-link">Click to view details →</span>
+      </div>
+
+      <div class="card project-card" data-project="embedded">
+        <h3>Embedded & Assistive Systems</h3>
+        <p>
+          Prosthetics, IoT systems, robotic arms, and smart irrigation solutions.
+        </p>
+        <span class="project-link">Click to view details →</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2><i class="fa-solid fa-address-card"></i> Contact</h2>
+
+    <p><i class="fa-solid fa-envelope"></i> ruganjiprince@gmail.com</p>
+    <p>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/ruganji-prince-57521a1a1/" target="_blank">
+        LinkedIn Profile
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Prince Ruganji</p>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- MODAL SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
