@@ -1,3 +1,6 @@
+/* =====================
+   GLOBAL RESET & BASE
+===================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +10,38 @@
 
 body {
   background: #f5f7fa;
-  color: #222;
-  line-height: 1.6;
+  color: #1f2937;
+  line-height: 1.7;
 }
 
-/* NAVBAR */
+/* =====================
+   NAVBAR
+===================== */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background: #0a2540;
-  color: white;
+  background: #071b33;
+  color: #f9fafb;
+}
+
+nav h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 24px;
 }
 
 nav a {
-  color: white;
+  color: #e5e7eb;
   text-decoration: none;
   position: relative;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 nav a::after {
@@ -41,7 +51,7 @@ nav a::after {
   height: 2px;
   background: #22c55e;
   left: 0;
-  bottom: -5px;
+  bottom: -6px;
   transition: width 0.3s ease;
 }
 
@@ -49,111 +59,161 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* HERO */
+/* =====================
+   HERO SECTION
+===================== */
 .hero {
-  padding: 100px 10%;
-  background: linear-gradient(135deg, #0a2540, #1e3a8a);
-  color: white;
+  padding: 130px 10%;
+  background: linear-gradient(135deg, #071b33, #0e2a47);
   text-align: center;
 }
 
+/* Profile Image */
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid white;
-  margin-bottom: 20px;
+  border: 5px solid #22c55e;
+  margin-bottom: 28px;
 }
 
-/* BUTTONS */
+/* Name */
+.hero-name {
+  font-size: 3.3rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #f9fafb;
+}
+
+.hero-name span {
+  color: #22c55e;
+}
+
+/* Title */
+.hero-title {
+  margin-top: 16px;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.hero-title span {
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+/* Description */
+.hero-description {
+  margin-top: 28px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.9;
+}
+
+/* =====================
+   BUTTONS
+===================== */
 .hero-buttons {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .btn {
-  padding: 12px 26px;
+  padding: 13px 28px;
   background: #22c55e;
-  color: black;
+  color: #052e16;
   text-decoration: none;
   border-radius: 30px;
   margin: 10px;
   display: inline-block;
+  font-weight: 600;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 28px rgba(34, 197, 94, 0.35);
 }
 
 .btn.secondary {
   background: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #94a3b8;
+  color: #e5e7eb;
 }
 
 .btn.secondary:hover {
-  background: white;
-  color: #0a2540;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #e5e7eb;
 }
 
-/* SECTIONS */
+/* =====================
+   SECTIONS
+===================== */
 section {
-  padding: 80px 10%;
+  padding: 90px 10%;
 }
 
 h2 {
   margin-bottom: 30px;
-  color: #0a2540;
+  color: #071b33;
 }
 
+/* =====================
+   GRID & CARDS
+===================== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
 }
 
-/* CARDS */
 .card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+  transform: translateY(-12px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.18);
 }
 
 .card h3 {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
-/* ICONS */
+/* =====================
+   ICONS
+===================== */
 i {
-  color: #1e3a8a;
+  color: #1e40af;
   margin-right: 8px;
 }
 
-/* FOOTER */
+/* =====================
+   FOOTER
+===================== */
 footer {
   text-align: center;
-  padding: 20px;
-  background: #0a2540;
-  color: white;
+  padding: 25px;
+  background: #071b33;
+  color: #e5e7eb;
 }
 
-/* PROJECT MODAL */
+/* =====================
+   MODALS
+===================== */
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,12 +229,12 @@ footer {
 }
 
 .modal {
-  background: white;
-  padding: 35px;
+  background: #ffffff;
+  padding: 38px;
   width: 90%;
-  max-width: 600px;
-  border-radius: 14px;
-  transform: scale(0.8);
+  max-width: 620px;
+  border-radius: 16px;
+  transform: scale(0.85);
   transition: transform 0.4s ease;
   position: relative;
 }
@@ -185,32 +245,303 @@ footer {
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 18px;
+  right: 22px;
   font-size: 28px;
   cursor: pointer;
-  color: #555;
+  color: #64748b;
 }
 
 .modal h3 {
   margin-bottom: 15px;
-  color: #0a2540;
+  color: #071b33;
 }
 
 .modal h4 {
-  margin-top: 20px;
-  color: #1e3a8a;
+  margin-top: 22px;
+  color: #1e40af;
 }
 
 .modal ul {
-  margin-top: 10px;
-  padding-left: 20px;
+  margin-top: 12px;
+  padding-left: 22px;
 }
 
 .project-link {
   display: inline-block;
-  margin-top: 10px;
-  color: #1e3a8a;
+  margin-top: 12px;
+  color: #1e40af;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* =====================
+   MESSAGE FORM
+===================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input,
+form textarea {
+  padding: 13px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+}
+
+/* =====================
+   HERO SLIDING BACKGROUND
+===================== */
+
+.hero-dynamic {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background layer */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;                 /* subtle */
+  filter: blur(12px) grayscale(20%);
+  animation: slideBg 25s linear infinite;
+  transform: scale(1.2);
+  z-index: 0;
+}
+
+/* Ensure content is above background */
+.hero-dynamic > *:not(.hero-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sliding animation */
+@keyframes slideBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =====================
+   ABOUT SECTION
+===================== */
+
+.about-section {
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #071b33;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-content {
+  max-width: 900px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.about-content strong {
+  color: #071b33;
+  font-weight: 600;
+}
+
+
+/* PROJECT CARD LINK */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGE SLIDER */
+.project-slider {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slideImages 8s infinite;
+  opacity: 0;
+}
+
+.project-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+.project-slider img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes slideImages {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* =========================
+   PROJECT CARD LINK
+========================= */
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   PROJECT IMAGE SLIDER
+========================= */
+.project-slider {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: projectSlide 8s infinite;
+}
+
+.project-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+.project-slider img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes projectSlide {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  40%  { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Hover polish */
+.project-card:hover .project-link {
+  color: #22c55e;
+}
+
+
+/* ================= PROJECT PAGE REDESIGN ================= */
+
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 10%;
+}
+
+.project-page h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #0a2540;
+}
+
+.project-intro {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.project-section {
+  margin-bottom: 60px;
+}
+
+.project-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.project-section p {
+  line-height: 1.9;
+  color: #334155;
+}
+
+.project-section ul {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #334155;
+}
+
+/* Image Styling */
+.project-page img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 25px 0;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Highlight Box */
+.project-highlight {
+  background: #f1f5f9;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px 0;
+  border-left: 5px solid #1e3a8a;
+}
+
+.project-highlight h4 {
+  margin-bottom: 10px;
+  color: #0a2540;
+}
+
+/* Tech Tags */
+.tech-stack {
+  margin-top: 15px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #0a2540;
+  padding: 6px 14px;
+  margin: 5px 5px 0 0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
