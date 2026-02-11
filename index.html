@@ -15,162 +15,211 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
+  <!-- ========== NAVBAR ========== -->
+  <nav aria-label="Main navigation">
     <h1>Prince Ruganji</h1>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="assets/profile.jpg" alt="Prince Ruganji" class="profile-img">
+  <!-- ========== HERO ========== -->
+  <section class="hero hero-dynamic" aria-label="Introduction">
+    <div class="hero-bg"></div>
 
-    <h2>
-      <i class="fa-solid fa-robot"></i>
-      Mechanical, AI & Machine Learning Engineer
+    <img src="assets/profile.jpg"
+         alt="Portrait of Ruganji Prince"
+         class="profile-img">
+
+    <h1 class="hero-name">RUGANJI <span>PRINCE</span></h1>
+
+    <h2 class="hero-title">
+      Mechanical Engineer · AI & Machine Learning Engineer ·
+      <span>Data Scientist & Analytics</span>
     </h2>
 
-    <p>
-      Applied AI & ML graduate student with strong experience in machine learning pipelines,
-      embedded systems, prosthetics, and human-centered engineering solutions.
+    <p class="hero-description">
+      Applied Artificial Intelligence and Machine Learning graduate student with
+      hands-on experience designing end-to-end machine learning and data analytics
+      pipelines. Focused on building human-centered, data-driven solutions with
+      real-world engineering impact.
     </p>
 
     <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
+      <a href="#projects" class="btn">Explore Projects</a>
+      <button class="btn secondary" id="openMessage">Send Message</button>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2><i class="fa-solid fa-user"></i> About Me</h2>
-    <p>
-      I am an Applied Artificial Intelligence and Machine Learning Engineering graduate student
-      with a strong foundation in mechanical engineering, embedded systems, and data-driven
-      problem solving. I specialize in designing, training, and evaluating machine learning models
-      using real-world data while integrating sensors, IoT, and mechanical systems to build
-      impactful, human-centered solutions.
-    </p>
-  </section>
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">
+      <i class="fa-solid fa-user"></i> About Me
+    </h2>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2><i class="fa-solid fa-brain"></i> Core Skills</h2>
+    <div class="about-content">
+      <p>
+        I am an <strong>Applied Artificial Intelligence and Machine Learning graduate student</strong>
+        with a solid engineering foundation and a strong interest in developing intelligent systems
+        that address real-world challenges.
+      </p>
 
-    <div class="grid">
-      <div class="card">
-        <h3><i class="fa-solid fa-chart-line"></i> Machine Learning & Data</h3>
-        <ul>
-          <li>Supervised & Unsupervised Learning</li>
-          <li>Feature Engineering</li>
-          <li>Time-Series Analysis</li>
-          <li>Explainable AI (SHAP)</li>
-          <li>Statistical Inference</li>
-        </ul>
-      </div>
+      <p>
+        My work focuses on <strong>end-to-end machine learning and data analytics pipelines</strong>,
+        spanning data preprocessing, feature engineering, modeling, evaluation, and explainability,
+        often integrated with embedded systems and physical engineering contexts.
+      </p>
 
-      <div class="card">
-        <h3><i class="fa-solid fa-code"></i> Programming & Tools</h3>
-        <ul>
-          <li>Python, PyTorch, scikit-learn</li>
-          <li>Pandas, NumPy</li>
-          <li>SQL, Git</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3><i class="fa-solid fa-microchip"></i> Embedded Systems & IoT</h3>
-        <ul>
-          <li>Arduino & Microcontrollers</li>
-          <li>Sensor Integration</li>
-          <li>IoT System Design</li>
-          <li>Real-Time Systems</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3><i class="fa-solid fa-gear"></i> Engineering & Design</h3>
-        <ul>
-          <li>Mechanical Design</li>
-          <li>SolidWorks (CAD)</li>
-          <li>Electronics Integration</li>
-        </ul>
-      </div>
+      <p>
+        I value <strong>clarity, ethics, and measurable impact</strong>, with particular interests in
+        explainable AI, sustainable systems, and technologies that improve quality of life.
+      </p>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" aria-label="Featured projects">
     <h2><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
+    <p class="section-hint">
+      Preview the work · Click any project to explore the full case study
+    </p>
 
     <div class="grid">
 
-      <div class="card project-card" data-project="loan-ai">
-        <h3>Fair & Explainable AI for Loan Approval</h3>
-        <p>
-          Transparent and bias-aware machine learning system for financial decision-making.
-        </p>
-        <span class="project-link">Click to view details →</span>
-      </div>
+      <!-- PROJECT 1 -->
+      <a href="projects/loan-ai.html"
+         class="project-card-link"
+         aria-label="Fair and Explainable AI for Loan Approval case study">
+        <div class="card project-card">
+          <div class="project-slider">
+            <img src="assets/projects/loan_shap_importance.png"
+                 alt="Global SHAP feature importance for loan approval model">
+            <img src="assets/projects/loan_shap_waterfall.png"
+                 alt="Local SHAP explanation for individual loan decision">
+          </div>
 
-      <div class="card project-card" data-project="energy">
-        <h3>Renewable Energy Grid Demand Analytics</h3>
-        <p>
-          Time-series modeling and forecasting of electricity demand and renewable generation.
-        </p>
-        <span class="project-link">Click to view details →</span>
-      </div>
+          <h3>Fair & Explainable AI for Loan Approval</h3>
+          <p>
+            Transparent, bias-aware machine learning system designed
+            for responsible financial decision-making.
+          </p>
 
-      <div class="card project-card" data-project="health">
-        <h3>Global Health & Life Expectancy Prediction</h3>
-        <p>
-          Predictive modeling of life expectancy using demographic and health indicators.
-        </p>
-        <span class="project-link">Click to view details →</span>
-      </div>
+          <span class="project-link">View full case study →</span>
+        </div>
+      </a>
 
-      <div class="card project-card" data-project="embedded">
-        <h3>Embedded & Assistive Systems</h3>
-        <p>
-          Prosthetics, IoT systems, robotic arms, and smart irrigation solutions.
-        </p>
-        <span class="project-link">Click to view details →</span>
-      </div>
+      <!-- PROJECT 2 -->
+      <a href="projects/energy.html"
+         class="project-card-link"
+         aria-label="Renewable Energy Grid Demand Analytics case study">
+        <div class="card project-card">
+          <div class="project-slider">
+            <img src="assets/projects/energy_daily_weekly.png"
+                 alt="Daily and weekly electricity demand trends">
+            <img src="assets/projects/energy_wind_penetration.png"
+                 alt="Wind energy penetration across the power grid">
+          </div>
+
+          <h3>Renewable Energy Grid Demand Analytics</h3>
+          <p>
+            Time-series and statistical analysis of electricity demand
+            and renewable energy generation.
+          </p>
+
+          <span class="project-link">View full case study →</span>
+        </div>
+      </a>
+
+      <!-- PROJECT 3 -->
+      <a href="projects/health.html"
+         class="project-card-link"
+         aria-label="Global Health and Life Expectancy Prediction case study">
+        <div class="card project-card">
+          <div class="project-slider">
+            <img src="assets/projects/health_feature_importance.png"
+                 alt="Feature importance for life expectancy prediction">
+            <img src="assets/projects/health_trend.png"
+                 alt="Life expectancy trends across countries">
+          </div>
+
+          <h3>Global Health & Life Expectancy Prediction</h3>
+          <p>
+            Predictive modeling of life expectancy using global
+            health, economic, and demographic indicators.
+          </p>
+
+          <span class="project-link">View full case study →</span>
+        </div>
+      </a>
+
+      <!-- PROJECT 4 -->
+      <a href="projects/embedded.html"
+         class="project-card-link"
+         aria-label="Embedded and Assistive Systems case study">
+        <div class="card project-card">
+          <div class="project-slider">
+            <img src="assets/projects/irrigation_prototype.png"
+                 alt="Smart irrigation and embedded system prototype">
+            <img src="assets/projects/irrigation_architecture.png"
+                 alt="IoT-based control and monitoring architecture">
+          </div>
+
+          <h3>Embedded & Assistive Systems</h3>
+          <p>
+            Engineering projects involving prosthetics, IoT solutions,
+            robotic systems, and smart irrigation.
+          </p>
+
+          <span class="project-link">View full case study →</span>
+        </div>
+      </a>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" aria-label="Contact information">
     <h2><i class="fa-solid fa-address-card"></i> Contact</h2>
 
-    <p><i class="fa-solid fa-envelope"></i> ruganjiprince@gmail.com</p>
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:ruganjiprince@gmail.com">ruganjiprince@gmail.com</a>
+    </p>
+
     <p>
       <i class="fa-brands fa-linkedin"></i>
-      <a href="https://www.linkedin.com/in/ruganji-prince-57521a1a1/" target="_blank">
+      <a href="https://www.linkedin.com/in/ruganji-prince-57521a1a1/"
+         target="_blank" rel="noopener">
         LinkedIn Profile
       </a>
     </p>
   </section>
 
+  <!-- ========== FOOTER ========== -->
   <footer>
     <p>© 2026 Prince Ruganji</p>
   </footer>
 
-  <!-- PROJECT MODAL -->
-  <div class="modal-overlay" id="modal">
+  <!-- ========== MESSAGE MODAL ========== -->
+  <div class="modal-overlay" id="messageModal" aria-hidden="true">
     <div class="modal">
-      <span class="close-btn" id="closeModal">&times;</span>
-      <div id="modal-content"></div>
+      <span class="close-btn" id="closeMessage" aria-label="Close message form">&times;</span>
+      <h3>Send Me a Message</h3>
+
+      <form action="mailto:ruganjiprince@gmail.com"
+            method="post"
+            enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </div>
 
-  <!-- MODAL SCRIPT -->
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
 
 </body>
