@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Renewable Energy Grid Demand Analytics | Ruganji Prince</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <h1>RUGANJI PRINCE</h1>
+  <ul>
+    <li><a href="../index.html#projects">← Back to Projects</a></li>
+  </ul>
+</nav>
+
+<!-- ================= PROJECT PAGE ================= -->
+<section class="project-page">
+
+  <!-- ===== Header ===== -->
+  <h2>Renewable Energy Grid Demand & Generation Analytics</h2>
+
+  <p class="project-intro">
+    A time-series analytics project exploring electricity demand patterns,
+    renewable generation dynamics, and wind energy penetration using
+    high-resolution grid data from Ireland and Northern Ireland.
+  </p>
+
+  <!-- ===== Tech Stack ===== -->
+  <div class="tech-stack">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>Time-Series Analysis</span>
+    <span>Statistical Testing</span>
+    <span>Data Visualization</span>
+    <span>Autocorrelation (ACF)</span>
+  </div>
+
+  <!-- ===== Problem Context ===== -->
+  <div class="project-section">
+    <h3>Problem Context</h3>
+    <p>
+      Modern electricity grids must balance fluctuating demand with increasing
+      renewable energy integration. Understanding seasonal patterns,
+      daily cycles, and renewable penetration is critical for ensuring
+      grid stability and efficient energy planning.
+    </p>
+  </div>
+
+  <!-- ===== Time-Series Analysis ===== -->
+  <div class="project-section">
+    <h3>Time-Series Demand & Generation Analysis</h3>
+
+    <img src="../assets/projects/energy_daily_weekly.png"
+         alt="Daily and Weekly Electricity Demand Trends">
+
+    <p>
+      Using 15-minute resolution grid data, daily and weekly averages
+      were computed to reveal cyclic consumption behavior.
+      Clear weekday-weekend demand differences were observed,
+      reflecting human activity patterns.
+      Renewable generation was closely aligned with demand,
+      demonstrating effective grid responsiveness.
+    </p>
+  </div>
+
+  <!-- ===== Highlight Box ===== -->
+  <div class="project-highlight">
+    <h4>Key Analytical Insights</h4>
+    <ul>
+      <li>Strong seasonal variation in electricity demand</li>
+      <li>Solar generation peaks in summer months</li>
+      <li>Wind contributes approximately 30–33% of total demand</li>
+      <li>Over-generation events indicate need for storage flexibility</li>
+      <li>Statistically significant demand differences between weekdays and weekends</li>
+    </ul>
+  </div>
+
+  <!-- ===== Statistical Analysis ===== -->
+  <div class="project-section">
+    <h3>Statistical Testing & Autocorrelation</h3>
+
+    <p>
+      Welch’s t-test was applied to compare weekday and weekend demand,
+      confirming statistically significant differences in consumption patterns.
+      Autocorrelation analysis (ACF) was performed on wind and solar generation
+      to evaluate periodicity and predictability characteristics.
+    </p>
+
+    <p>
+      Solar generation exhibited strong daily periodic behavior,
+      while wind generation displayed more stochastic characteristics,
+      highlighting forecasting challenges in renewable energy systems.
+    </p>
+  </div>
+
+  <!-- ===== Wind Penetration ===== -->
+  <div class="project-section">
+    <h3>Wind Energy Penetration Analysis</h3>
+
+    <img src="../assets/projects/energy_wind_penetration.png"
+         alt="Wind Energy Penetration Rate">
+
+    <p>
+      Wind penetration rate was calculated as the ratio of wind generation
+      to total electricity demand. The results demonstrate substantial
+      renewable contribution while also revealing periods of over-generation,
+      emphasizing the importance of grid flexibility and storage solutions.
+    </p>
+  </div>
+
+  <!-- ===== Impact Section ===== -->
+  <div class="project-section">
+    <h3>Impact & Relevance</h3>
+    <p>
+      This project demonstrates how time-series analytics and statistical
+      modeling can provide actionable insights for renewable energy integration.
+      The findings support data-driven energy planning, sustainable infrastructure
+      development, and improved grid reliability.
+    </p>
+
+    <p>
+      It highlights the importance of combining statistical rigor with
+      practical interpretation when analyzing complex real-world systems.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>

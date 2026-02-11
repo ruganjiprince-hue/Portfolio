@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fair & Explainable AI for Loan Approval | Ruganji Prince</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <h1>RUGANJI PRINCE</h1>
+  <ul>
+    <li><a href="../index.html#projects">← Back to Projects</a></li>
+  </ul>
+</nav>
+
+<!-- ================= PROJECT PAGE ================= -->
+<section class="project-page">
+
+  <!-- ===== Header ===== -->
+  <h2>Fair and Explainable AI for Loan Approval</h2>
+
+  <p class="project-intro">
+    An end-to-end machine learning system designed to predict loan approval decisions
+    while ensuring fairness, interpretability, and responsible AI practices in
+    high-stakes financial applications.
+  </p>
+
+  <!-- ===== Tech Stack ===== -->
+  <div class="tech-stack">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>Scikit-learn</span>
+    <span>SMOTE</span>
+    <span>Logistic Regression</span>
+    <span>SHAP</span>
+    <span>Explainable AI</span>
+  </div>
+
+  <!-- ===== Problem Context ===== -->
+  <div class="project-section">
+    <h3>Problem Context</h3>
+    <p>
+      Loan approval systems directly impact individuals' financial access
+      and economic opportunities. Traditional machine learning models may
+      achieve high accuracy but often lack transparency and fairness.
+      This project aimed to design a predictive system that balances
+      performance with interpretability and ethical considerations.
+    </p>
+  </div>
+
+  <!-- ===== Data Preparation ===== -->
+  <div class="project-section">
+    <h3>Data Exploration and Preprocessing</h3>
+    <p>
+      The dataset contained demographic, financial, and credit-related features.
+      Exploratory analysis revealed skewed income distributions,
+      missing values, and class imbalance.
+    </p>
+
+    <ul>
+      <li>Handled missing values using statistical imputation</li>
+      <li>Applied log transformation to normalize skewed features</li>
+      <li>Engineered meaningful ratios such as Loan-to-Income</li>
+      <li>Addressed class imbalance using SMOTE</li>
+      <li>Scaled features using RobustScaler</li>
+    </ul>
+  </div>
+
+  <!-- ===== Modeling Section ===== -->
+  <div class="project-section">
+    <h3>Modeling and Evaluation</h3>
+    <p>
+      Multiple classification models were trained and compared,
+      including Logistic Regression, Support Vector Machines,
+      and SGD-based classifiers.
+    </p>
+
+    <p>
+      Logistic Regression was selected for its strong balance
+      between predictive performance and interpretability,
+      achieving approximately 82% accuracy with stable precision–recall trade-offs.
+    </p>
+  </div>
+
+  <!-- ===== Explainability ===== -->
+  <div class="project-section">
+    <h3>Model Explainability and Bias Analysis</h3>
+
+    <img src="../assets/projects/loan_shap_importance.png"
+         alt="Global SHAP Feature Importance">
+
+    <p>
+      SHAP (SHapley Additive Explanations) was used to analyze global
+      feature importance. Credit History, Income Composition,
+      and Loan-to-Income Ratio emerged as dominant decision drivers.
+    </p>
+
+    <img src="../assets/projects/loan_shap_waterfall.png"
+         alt="Local SHAP Explanation">
+
+    <p>
+      Local SHAP explanations provided transparency for individual predictions,
+      illustrating how specific features influenced approval or rejection decisions.
+    </p>
+  </div>
+
+  <!-- ===== Highlight Box ===== -->
+  <div class="project-highlight">
+    <h4>Key Technical and Ethical Insights</h4>
+    <ul>
+      <li>Performance must be balanced with interpretability</li>
+      <li>Credit History strongly dominates loan decisions</li>
+      <li>Class imbalance significantly affects financial datasets</li>
+      <li>Explainability tools increase transparency in high-stakes AI</li>
+      <li>Bias analysis is essential for responsible deployment</li>
+    </ul>
+  </div>
+
+  <!-- ===== Impact Section ===== -->
+  <div class="project-section">
+    <h3>Impact and Takeaways</h3>
+    <p>
+      This project demonstrates the importance of responsible AI in
+      financial systems. By combining robust preprocessing,
+      careful model selection, and explainability techniques,
+      the system ensures that predictive decisions remain transparent,
+      fair, and justifiable.
+    </p>
+
+    <p>
+      It highlights how machine learning solutions must consider
+      societal implications alongside technical performance.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>

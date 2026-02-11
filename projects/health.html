@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Health and Life Expectancy Prediction | Ruganji Prince</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <h1>RUGANJI PRINCE</h1>
+  <ul>
+    <li><a href="../index.html#projects">← Back to Projects</a></li>
+  </ul>
+</nav>
+
+<!-- ================= PROJECT PAGE ================= -->
+<section class="project-page">
+
+  <!-- ===== Header ===== -->
+  <h2>Global Health and Life Expectancy Prediction</h2>
+
+  <p class="project-intro">
+    A machine learning and data analytics project exploring how economic,
+    healthcare, and demographic indicators influence global life expectancy,
+    with a focus on interpretability and model performance comparison.
+  </p>
+
+  <!-- ===== Tech Stack ===== -->
+  <div class="tech-stack">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>Scikit-learn</span>
+    <span>Feature Engineering</span>
+    <span>Regression Models</span>
+    <span>Model Evaluation</span>
+  </div>
+
+  <!-- ===== Dataset Section ===== -->
+  <div class="project-section">
+    <h3>Problem Context</h3>
+    <p>
+      Life expectancy is one of the most important indicators of population
+      health and socioeconomic development. The objective of this project was
+      to identify the most influential factors affecting life expectancy and
+      to build predictive models capable of capturing complex relationships
+      between health, economic, and demographic variables.
+    </p>
+  </div>
+
+  <!-- ===== Data Exploration ===== -->
+  <div class="project-section">
+    <h3>Exploratory Data Analysis</h3>
+
+    <img src="../assets/projects/health_trend.png"
+         alt="Global Life Expectancy Trends">
+
+    <p>
+      The dataset spans multiple countries over several years and includes
+      indicators such as GDP, adult mortality, infant deaths, BMI, schooling,
+      and vaccination coverage. Exploratory analysis revealed persistent
+      disparities between developed and developing countries, with noticeable
+      gaps in life expectancy progression.
+    </p>
+  </div>
+
+  <!-- ===== Feature Engineering ===== -->
+  <div class="project-section">
+    <h3>Data Cleaning and Feature Engineering</h3>
+    <ul>
+      <li>Handled missing values using statistical and KNN-based imputation</li>
+      <li>Analyzed and mitigated outliers in GDP and expenditure features</li>
+      <li>Engineered composite features such as Infant Survival Rate</li>
+      <li>Created indices combining education and income variables</li>
+    </ul>
+  </div>
+
+  <!-- ===== Highlight Box ===== -->
+  <div class="project-highlight">
+    <h4>Key Modeling Insights</h4>
+    <ul>
+      <li>Ensemble models significantly outperformed linear baselines</li>
+      <li>Random Forest achieved the strongest overall predictive performance</li>
+      <li>Top predictors included Income Composition, Adult Mortality, and Infant Deaths</li>
+      <li>Reduced-feature models maintained competitive accuracy while improving interpretability</li>
+    </ul>
+  </div>
+
+  <!-- ===== Modeling Section ===== -->
+  <div class="project-section">
+    <h3>Modeling and Evaluation</h3>
+
+    <img src="../assets/projects/health_feature_importance.png"
+         alt="Feature Importance for Life Expectancy Prediction">
+
+    <p>
+      Multiple regression models were evaluated, including Decision Trees,
+      Random Forest, K-Nearest Neighbors, and Gradient Boosting.
+      Hyperparameter tuning was conducted using GridSearchCV,
+      and performance was compared using RMSE, MAE, and R² metrics.
+    </p>
+  </div>
+
+  <!-- ===== Impact Section ===== -->
+  <div class="project-section">
+    <h3>Impact and Interpretation</h3>
+    <p>
+      The findings confirm that life expectancy is shaped by a combination of
+      healthcare access, economic stability, and demographic conditions.
+      By identifying the most influential features, this project supports
+      evidence-based policy discussions and highlights actionable areas for
+      improving global health outcomes.
+    </p>
+
+    <p>
+      The project demonstrates the importance of combining predictive accuracy
+      with interpretability to ensure that data-driven insights remain meaningful
+      and socially responsible.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>
